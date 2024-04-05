@@ -20,15 +20,12 @@ const Task1 = () => {
     const circleRect = circleRef.current.getBoundingClientRect();
     switch (direction) {
       case "up":
-        if (outerBoundary.top < circlePosition.y)
+        if (outerBoundary.top < circleRect.top - 10)
           setCirclePosition((prev) => ({ ...prev, y: prev.y - 10 }));
         break;
 
       case "down":
-        if (
-          outerBoundary.bottom - circleSize.height >
-          circlePosition.y + (circleSize.height - 10)
-        )
+        if (outerBoundary.bottom > circleRect.bottom + 10)
           setCirclePosition((prev) => ({ ...prev, y: prev.y + 10 }));
         break;
 
