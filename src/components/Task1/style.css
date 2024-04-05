@@ -1,0 +1,48 @@
+.outer-container,
+.first-cont {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-cont-inner-cont {
+  width: 50%;
+  height: 30vh;
+  margin: 0 0 2rem 0;
+  border-radius: 12px;
+  border: solid red 1px;
+  padding: 1rem;
+  position: relative;
+}
+
+.first-cont-inner-cont-circle {
+  background-color: green;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circle-boundary {
+  position: absolute;
+  border: solid black 1px;
+  border-style: dashed;
+  height: 50%;
+  width: 50%;
+  border-radius: 12px;
+  right: 20px;
+  top: 40px;
+}
+
+.second-cont {
+  width: 30%;
+  text-align: center;
+  border: solid blue 1px;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.second-cont-middle-col {
+  margin: 6px 40px 6px 40px;
+  display: flex;
+  justify-content: space-between;
+}
